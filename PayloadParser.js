@@ -57,7 +57,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("2");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -69,7 +71,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("3");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                 try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+            
             });
             break;  
             
@@ -81,7 +86,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("4");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                 try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
         
@@ -93,7 +100,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("5");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                 try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
         
@@ -105,7 +115,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("6");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
+
             });
             break;
         
@@ -117,7 +130,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("7");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
         
@@ -141,7 +157,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("9");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
 
@@ -153,7 +172,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("10");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
+                
             });
             break;  
         
@@ -165,7 +187,7 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("11");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
             });
             break;
         
@@ -177,7 +199,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("12");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
         
@@ -189,7 +214,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("13");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
         
@@ -201,7 +228,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("14");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
 
@@ -213,7 +243,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("15");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -225,7 +257,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("16");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;
         
@@ -237,7 +272,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("17");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;   
              
@@ -249,7 +286,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("18");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -261,7 +300,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("19");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;   
         
@@ -273,7 +314,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("20");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;
         
@@ -285,7 +329,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("21");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;   
 
@@ -297,7 +343,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("22");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;
 
@@ -309,7 +358,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("23");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
              
@@ -321,7 +372,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("24");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;  
         
@@ -333,7 +387,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("25");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break; 
         
@@ -345,7 +402,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("26");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;   
         
@@ -357,7 +417,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("27");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;
         
@@ -369,7 +432,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("28");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;   
 
@@ -381,7 +446,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("29");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
+                
             });
             break;
 
@@ -393,7 +461,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("30");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -405,7 +475,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("32");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -417,7 +489,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Tot_FT_Teklen");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -430,7 +504,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("VaporFerm");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
         case "/PLC2/VaporExtrac":
@@ -441,7 +517,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("VaporExtrac");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
                    
@@ -453,7 +531,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("VaporAlim");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;    
 
@@ -465,7 +545,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("VaporLSI");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;    
 
@@ -478,9 +560,12 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Aire_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
-                FT_CF1=ValueData.v.toFixed(2);
-                FT_Total_TS=ValueData.ts;
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                    FT_CF1=ValueData.v.toFixed(2);
+                    FT_Total_TS=ValueData.ts;
+                }catch{};
+                
             });
             break; 
 
@@ -492,7 +577,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Aire_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
             
@@ -504,7 +591,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Amon_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -516,7 +605,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Amon_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -528,7 +619,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Fosf_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -540,7 +633,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Fosf_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -552,7 +647,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Mosto_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -564,7 +661,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Mosto_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -576,7 +675,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Operac");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -588,7 +689,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_TIC_SP");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -600,7 +703,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_NombreReceta");
-                etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -612,7 +717,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Estado");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -624,7 +731,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Hora");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -636,7 +745,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_Minuto");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -648,7 +759,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF1_OEE");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -662,8 +775,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Aire_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
-                FT_CF2=ValueData.v.toFixed(2);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                    FT_CF2=ValueData.v.toFixed(2);
+                }catch{};                
             });
             break; 
 
@@ -675,7 +790,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Aire_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
             
@@ -687,7 +804,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Amon_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -699,7 +818,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Amon_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -711,7 +832,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Fosf_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -723,7 +846,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Fosf_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -735,7 +860,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Mosto_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -747,7 +874,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Mosto_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -759,7 +888,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Operac");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -771,7 +902,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_TIC_SP");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -783,7 +916,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_NombreReceta");
-                etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -795,7 +930,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Estado");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -808,7 +945,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Hora");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -820,7 +959,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_Minuto");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -832,7 +973,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF2_OEE");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -846,8 +989,11 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Aire_PV");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
-                FT_CF3=ValueData.v.toFixed(2);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                    FT_CF3=ValueData.v.toFixed(2);
+                }catch{};
+                
             });
             break; 
 
@@ -859,7 +1005,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Aire_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
             
@@ -871,7 +1019,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Amon_SP");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -883,7 +1033,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Amon_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -895,7 +1047,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Fosf_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -907,7 +1061,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Fosf_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -919,7 +1075,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Mosto_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -931,7 +1089,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Mosto_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -943,7 +1103,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Operac");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -955,7 +1117,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_TIC_SP");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -967,7 +1131,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_NombreReceta");
-                etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -979,7 +1145,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Estado");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -992,7 +1160,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Hora");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -1004,7 +1174,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_Minuto");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1016,7 +1188,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF3_OEE");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1030,8 +1204,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Aire_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
-                FT_CF4=ValueData.v.toFixed(2);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                    FT_CF4=ValueData.v.toFixed(2);
+                }catch{};               
             });
             break; 
 
@@ -1043,7 +1219,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Aire_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
             
@@ -1055,7 +1233,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Amon_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -1067,7 +1247,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Amon_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -1079,7 +1261,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Fosf_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break; 
 
@@ -1091,7 +1275,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Fosf_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1103,7 +1289,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Mosto_SP");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1115,7 +1303,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Mosto_PV");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1127,7 +1317,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Operac");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -1139,7 +1331,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_TIC_SP");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1151,7 +1345,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_NombreReceta");
-                etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTextContainerStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;  
 
@@ -1163,7 +1359,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Estado");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1176,7 +1374,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Hora");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
             
@@ -1188,7 +1388,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_Minuto");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1200,7 +1402,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("CF4_OEE");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
            
@@ -1212,7 +1416,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_Mensaje");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1224,7 +1430,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_Estado");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1236,7 +1444,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_Recirculaciones");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1248,7 +1458,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_Densidad");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1260,7 +1472,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_Tiempo");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1273,7 +1487,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK2_Temperatura");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1285,7 +1501,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK2_Presion");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1297,7 +1515,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK2_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1310,7 +1530,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK3_Temperatura");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1322,7 +1544,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK3_Presion");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1334,7 +1558,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK3_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1347,7 +1573,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK4_Temperatura");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1359,7 +1587,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK4_Presion");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1371,7 +1601,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK4_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1384,7 +1616,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK5_Temperatura");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1396,7 +1630,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK5_Presion");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1408,7 +1644,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK5_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1421,7 +1659,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK6_Temperatura");
-                etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1433,7 +1673,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK6_Presion");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1445,7 +1687,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TK6_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1457,7 +1701,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_LT9011");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1469,7 +1715,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Mosto_Cubas");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1481,7 +1729,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TKInter_Nivel");
-                etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1493,7 +1743,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TKInter_Temp");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1505,7 +1757,9 @@ function parseUplink(device, payload)
                     var ValueData = ExtractTagData(valueElement);
                     //Listo, actualizamos el endpoint
                     var etv1 = device.endpoints.byAddress("Coccion_PIT9002");
+                    try{
                     etv1.updateGenericSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
                 });
                 break;
 
@@ -1517,7 +1771,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Coccion_B9004");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                }catch{};
             });
             break;
 
@@ -1529,8 +1785,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Turbo1_ON");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
                 T1_ON=ValueData.v;
+                }catch{};
             });
             break;
 
@@ -1542,8 +1800,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Turbo2_ON");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
                 T2_ON=ValueData.v;
+                }catch{};
             });
             break;
 
@@ -1555,8 +1815,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Turbo3_ON");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
-                T3_ON=ValueData.v;
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                    T3_ON=ValueData.v;
+                }catch{};
             });
             break;
 
@@ -1568,8 +1830,10 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("Turbo4_ON");
-                etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
-                T4_ON=ValueData.v;
+                try{
+                    etv1.updateGenericSensorStatus(ValueData.v, ValueData.ts);
+                    T4_ON=ValueData.v;
+                }catch{};
             });
             break;
 
@@ -1617,7 +1881,9 @@ function parseUplink(device, payload)
                 var ValueData = ExtractTagData(valueElement);
                 //Listo, actualizamos el endpoint
                 var etv1 = device.endpoints.byAddress("TT-609");
-                etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                try{
+                    etv1.updateTemperatureSensorStatus(ValueData.v.toFixed(2), ValueData.ts);
+                }catch{};
             });
             break;
         }
