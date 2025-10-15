@@ -228,7 +228,23 @@ var e = endpoints.addEndpoint("CF4_Estado", "Estado Cuba 4", endpointType.generi
   endpoints.addEndpoint("CF2_NombreReceta", "Nombre Receta Cuba 2", endpointType.textContainer);
   endpoints.addEndpoint("CF3_NombreReceta", "Nombre Receta Cuba 3", endpointType.textContainer);
   endpoints.addEndpoint("CF4_NombreReceta", "Nombre Receta Cuba 4", endpointType.textContainer);
+   endpoints.addEndpoint("CF5_NombreReceta", "Nombre Receta Cuba 5", endpointType.textContainer);
 
+
+var e = endpoints.addEndpoint("CF5_Operac", "Numero de Operacion Cuba 5", endpointType.genericSensor);
+  e.variableTypeId = 1018;
+
+ var e = endpoints.addEndpoint("CF5_Hora", "Hora Cuba 5", endpointType.genericSensor);
+  e.variableTypeId = 1018;
+
+  var e = endpoints.addEndpoint("CF5_Minuto", "Minuto Cuba 5", endpointType.genericSensor);
+  e.variableTypeId = 1018;
+  
+  var e = endpoints.addEndpoint("CF5_OEE", "OEE Cuba 5", endpointType.genericSensor);
+  e.variableTypeId = 1019;
+  var e = endpoints.addEndpoint("CF5_Tiempo_OEE", "Tiempo para OEE Cuba 5", endpointType.genericSensor);
+  e.variableTypeId = 1008;
+  
 var e = endpoints.addEndpoint("Coccion_Mensaje", "Mensajes Coccion", endpointType.genericSensor);
   e.variableTypeId = 1023;
 
